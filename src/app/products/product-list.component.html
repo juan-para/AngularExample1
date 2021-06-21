@@ -42,10 +42,10 @@
                       [style.margin.px]='imageMargin'>
               </td>
               <td>{{product.productName}}</td>
-              <td>{{product.productCode | lowercase}}</td>
+              <td>{{product.productCode | lowercase | convertToSpaces:'-' }}</td>
               <!-- https://angular.io/api/common/DatePipe -->
               <td>{{product.releaseDate | date:'shortDate'}}</td>
-              <td>{{product.price | currency:'USD':'symbol':'2.2-2'}}</td>
+              <td>{{product.price | currency:'USD':'symbol':'1.2-2'}}</td>
               <td>{{product.starRating}}</td>
             </tr>
           </tbody>

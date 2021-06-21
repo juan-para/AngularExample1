@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product-list.components';
+import { ConvertToSpacesPipes } from './shared/convert-to-spaces.pipe';
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent],
+  declarations: [AppComponent, ProductListComponent, ConvertToSpacesPipes],
   imports: [BrowserModule, FormsModule],
   bootstrap: [AppComponent],
 })
